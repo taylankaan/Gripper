@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ridge.tscn" type="PackedScene" id=2]
+
+[node name="gameplay" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+
+[node name="cam" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_right = 180
+
+[node name="ridges" type="Node2D" parent="."]
+position = Vector2( -92.0127, 42.3818 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ridge" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 148.995, 164.382 )
+
+[node name="ridge2" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 106.682, 217.731 )
+
+[node name="ridge3" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 74.0964, 127.572 )
+
+[node name="ridge4" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 121.026, 98.6917 )
+
+[node name="ridge5" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 159.834, 66.2017 )
+
+[node name="ridge6" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 88.5364, 49.9567 )
+
+[node name="ridge7" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 28.0689, 80.6417 )
+
+[node name="ridge8" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 42.5089, 172.697 )
+
+[node name="ridge9" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 97.5614, 163.672 )
+
+[node name="ridge10" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 133.561, 20.6717 )
+
+[node name="ridge11" parent="ridges" instance=ExtResource( 2 )]
+position = Vector2( 46.5614, 26.6717 )
